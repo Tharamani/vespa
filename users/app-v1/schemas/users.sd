@@ -1,0 +1,20 @@
+# Copyright Yahoo. Licensed under the terms of the Apache 2.0 license. See LICENSE in the project root.
+
+schema users {
+    document users {
+
+        field name type string {
+            indexing: index | summary
+        }
+
+         field age type string {
+            indexing: index | summary
+             index: enable-bm25
+        }
+         field city type string {
+            indexing: index | summary
+             index: enable-bm25
+        }
+
+    }
+}
